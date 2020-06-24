@@ -1,3 +1,10 @@
+##########################################################################
+#
+#  Courtesy of Felix Dangel: https://github.com/f-dangel/backpack
+#
+##########################################################################
+
+
 """Exact computation of full Hessian using autodiff."""
 from torch import cat, zeros, stack
 from torch.autograd import grad
