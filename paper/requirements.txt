@@ -114,7 +114,7 @@ statsmodels==0.10.1
 sympy==1.5.1
 tensorboard==1.15.0
 tensorboardX==1.9
-tensorflow==1.15.0
+tensorflow==1.15.2
 tensorflow-estimator==1.15.1
 tensorflow-gpu==2.0.0
 termcolor==1.1.0
