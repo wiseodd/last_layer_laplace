@@ -6,7 +6,7 @@ from util.tables import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', help='Pick one \\{"MNIST", "CIFAR10", "SVHN", "CIFAR100"\\}', default='MNIST')
-parser.add_argument('--type', help='Pick one \\{"plain", "ACET", "OE"\\}', default='plain')
+parser.add_argument('--type', help='Pick one \\{"plain", "ACET", "OE", "DKL"\\}', default='plain')
 parser.add_argument('--show', help='Pick one \\{"all", "mean", "std"\\}', default='all')
 args = parser.parse_args()
 
@@ -70,7 +70,7 @@ for k in tab_ood.keys():
     kk = k
 
     # Hotfix for CIFAR100
-    if args.dataset == 'CIFAR100':
+    if args.dataset == 'CIFAR100' and args.type != 'DKL':
         if k == 'CIFAR100 - CIFAR100':
             for d in dicts_ood:
                 d[kk][3] = -1

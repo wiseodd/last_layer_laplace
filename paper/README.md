@@ -6,3 +6,4 @@
 4. **Optional.** Run `python train.py` and `python train_binary.py`. See codes for arguments.
 5. Run `python {dataset_name}.py --compute_hessian`.
 6. Check out also the `notebooks` directory for the toy experiments.
+7. Also, for deep kernel learning (DKL; Wilson et al., 2016) experiments, train the model via `python train_dkl.py` and test using `python {dataset_name}_dkl.py`.
